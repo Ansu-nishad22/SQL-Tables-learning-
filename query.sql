@@ -27,6 +27,28 @@
 -- VALUES
 -- ('Volkswagen', 'Beetle', 1967, 30000, 'Black', 5, FALSE, NULL);
 
+-- left JOIN
+/*
+	Select the brand, model, price, sold, sold_price columns
+		from sold_cars
+	Left join with cars
+		matching sold_cars.cars_id to cars.id
+*/
+-- SELECT brand, model, price, sold, sold_price 
+--   FROM sold_cars SC
+--   LEFT JOIN cars C ON SC.cars_id = C.id;
+
+
+-- right join
+/*
+	Select name, role, city, state
+		From the staff table
+	Right join with the dealerships table where the dealership_id in staff
+			matches with the id in dealerships
+*/
+-- SELECT name, role, city, state FROM staff
+--   RIGHT JOIN dealerships ON dealership_id = dealerships.id;
+
 
 -- ANY
 /*
